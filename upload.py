@@ -4,6 +4,7 @@ import requests
 import sys
 import zipfile
 
+# Usage: python upload.py database application version ./file.dmp
 
 def main():
     if len(sys.argv) != 5:
