@@ -25,10 +25,12 @@ Install the required packages:
 pip install -r requirements.txt
 ```
 
-Invoke `upload.py` as follows, being sure to replace database, application, version, and file.dmp with values specific to your [BugSplat](https://bugsplat.com) configuration:
+Invoke `upload.py` as follows, being sure to replace `database`, `application`, `version`, and `file.dmp` with values specific to your [BugSplat](https://bugsplat.com) configuration:
 
 ```bash
 python upload.py database application version ./file.dmp
 ```
+
+Be sure to wait at least 1 second between requests to avoid triggering a 429 error (too many requests).
 
 Thanks for using BugSplat ❤️
